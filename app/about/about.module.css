@@ -1,0 +1,336 @@
+.page {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--accent)) 100%);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: hsl(var(--foreground));
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: black;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+.intro {
+  padding: 4rem 0;
+}
+
+.introContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: hsl(var(--foreground));
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.values {
+  padding: 4rem 0;
+  background: hsl(var(--accent) / 0.5);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .valuesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.valueCard {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px hsl(var(--foreground) / 0.1);
+}
+
+.valueIcon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(var(--primary) / 0.1);
+  color: hsl(var(--primary));
+  border-radius: 0.75rem;
+  margin: 0 auto 1.5rem;
+}
+
+.valueTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: hsl(var(--foreground));
+}
+
+.valueDescription {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: black;
+}
+
+.whatMakesUsDifferent {
+  padding: 4rem 0;
+}
+
+.differenceGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .differenceGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.differenceItem {
+  padding: 1.5rem;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.differenceItem:hover {
+  border-color: hsl(var(--primary) / 0.3);
+  box-shadow: 0 4px 12px hsl(var(--foreground) / 0.08);
+}
+
+.differenceTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: hsl(var(--foreground));
+}
+
+.differenceDescription {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: black;
+}
+
+.tech {
+  padding: 4rem 0;
+  background: hsl(var(--accent) / 0.5);
+}
+
+.techContent {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.techIcon {
+  color: hsl(var(--primary));
+  margin: 0 auto 1.5rem;
+}
+
+.techDescription {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.techBadge {
+  padding: 0.75rem 1.5rem;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 2rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: hsl(var(--foreground));
+  transition: all 0.2s ease;
+}
+
+.techBadge:hover {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border-color: hsl(var(--primary));
+  transform: translateY(-2px);
+}
+
+.team {
+  padding: 4rem 0;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.teamCard {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px hsl(var(--foreground) / 0.1);
+  border-color: hsl(var(--primary) / 0.3);
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: hsl(var(--primary) / 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  border: 3px solid hsl(var(--primary) / 0.2);
+}
+
+.initials {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(var(--primary));
+}
+
+.memberName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: hsl(var(--foreground));
+}
+
+.memberRole {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(var(--primary));
+  margin-bottom: 1rem;
+}
+
+.memberDescription {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: black;
+}
+
+.mission {
+  padding: 4rem 0 6rem;
+}
+
+.missionCard {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .missionCard {
+    padding: 4rem 3rem;
+  }
+}
+
+.missionTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: hsl(var(--foreground));
+}
+
+@media (min-width: 768px) {
+  .missionTitle {
+    font-size: 2.5rem;
+  }
+}
+
+.missionText {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: black;
+  max-width: 700px;
+  margin: 0 auto;
+}
